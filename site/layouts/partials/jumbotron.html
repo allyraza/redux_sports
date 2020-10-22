@@ -1,0 +1,17 @@
+<section class="Hero" style="background-image: url('{{.imageUrl}}')">
+  {{ block "header" . }}{{ partial "nav" . }}{{end}}
+
+  <div class="Hero-body">
+    <h1 class="Hero-heading">
+      {{.title}}
+    </h1>
+    {{ if .subtitle }}
+    <p class="Hero-text">
+      {{.subtitle}}
+    </p>
+    {{ end }}
+
+    <button class="Button" type="button">All Products</button>
+
+  </div>
+</section>
